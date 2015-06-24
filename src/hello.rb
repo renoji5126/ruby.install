@@ -1,4 +1,6 @@
-print "hello world!!"
-puts "helow world!!(puts)"
-p "hello world(p)"
+msg = "hello world!!"
 
+p msg
+
+AAA = "TEST"
+AAA = "ruby"
