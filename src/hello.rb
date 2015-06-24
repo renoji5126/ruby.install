@@ -1,6 +1,4 @@
 msg = "hello world!!"
 
-p msg
+p msg.length
 
-AAA = "TEST"
-AAA = "ruby"
