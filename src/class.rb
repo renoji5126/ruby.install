@@ -16,11 +16,20 @@ class User
   end
 end
 
+# クラス継承
+class SuperUser < User
+  def shout
+    puts "HELLO! from #{@name}"
+  end
+end
+
 User.sayHello()
 
 tom = User.new("Tom")
-bob = User.new("Bob")
+bob = SuperUser.new("Bob")
 
-tom.sayHi
-bob.sayHi
+tom.sayHi()
+#tom.shout()
+bob.sayHi()
+bob.shout()
 User.sayHello()
