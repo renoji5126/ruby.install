@@ -7,3 +7,18 @@ puts s.upcase!
 puts s
 
 p s.empty?
+
+
+# 自作関数
+
+def sayHi(name = "steve")
+  s = "hello! " + name
+  puts s
+  return s
+end
+
+sayHi("hoge")
+sayHi("fuga")
+d = sayHi()
+
+puts d
