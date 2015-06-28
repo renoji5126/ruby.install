@@ -7,6 +7,17 @@ class User
     @@count += 1
   end
 
+  # getter
+  def name
+    @name
+  end
+  
+  #setter
+  def setName(newname)
+    @name = newname 
+  end
+
+
   def sayHi # インスタンスメソッド
     puts "hello, my name is #{@name}"
   end
@@ -22,6 +33,7 @@ class SuperUser < User
     puts "HELLO! from #{@name}"
   end
 end
+
 
 User.sayHello()
 
