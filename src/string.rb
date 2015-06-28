@@ -8,3 +8,8 @@ p y
 
 puts x + y
 puts x * 5
+
+s = %Q{hello}
+p s
+s = %q{hel"lo}
+p s

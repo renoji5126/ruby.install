@@ -18,3 +18,10 @@ p a
 
 # sortは文字列が入ると文句を言うよ
 p a.sort
+
+a = %W(a b c)
+p a
+
+
+a = %w(a b c)
+p a
