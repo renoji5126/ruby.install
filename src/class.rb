@@ -7,16 +7,7 @@ class User
     @@count += 1
   end
 
-  # getter
-  def name
-    @name
-  end
-  
-  #setter
-  def setName(newname)
-    @name = newname 
-  end
-
+  attr_accessor :name
 
   def sayHi # インスタンスメソッド
     puts "hello, my name is #{@name}"
@@ -38,10 +29,6 @@ end
 User.sayHello()
 
 tom = User.new("Tom")
-bob = SuperUser.new("Bob")
-
 tom.sayHi()
-#tom.shout()
-bob.sayHi()
-bob.shout()
-User.sayHello()
+tom.name = "Bob"
+tom.sayHi()
